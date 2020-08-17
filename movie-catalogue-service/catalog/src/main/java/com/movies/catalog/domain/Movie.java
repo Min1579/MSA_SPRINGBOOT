@@ -1,10 +1,9 @@
 package com.movies.catalog.domain;
 
 public class Movie {
-    private String moiveId;
-    private String name;
+    private final String moiveId;
+    private final String name;
 
-    public Movie() {}
     public Movie(String moiveId, String name) {
         this.moiveId = moiveId;
         this.name = name;
@@ -13,16 +12,7 @@ public class Movie {
     public String getMoiveId() {
         return moiveId;
     }
-
-    public void setMoiveId(String moiveId) {
-        this.moiveId = moiveId;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
